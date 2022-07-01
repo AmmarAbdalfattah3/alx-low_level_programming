@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $CFILE -o $( echo $CFILE | tr ".c" ".s")
+gcc -s --masm=intel $CFILE -o $( echo $CFILE | tr ".c" ".s")

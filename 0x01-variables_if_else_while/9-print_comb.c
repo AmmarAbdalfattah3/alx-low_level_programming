@@ -8,18 +8,12 @@
 
 int main(void)
 {
-int x;
-int d;
-for (x = 0; x <= 9; x++)
+for (int i = '0'; i <= '9'; i++)
 {
-for (d = 0; d <= 9; d++)
-{
-putchar(x);
+putchar(i);
 putchar(',');
-putchar(d);
-}
+putchar(' ');
 }
 putchar('\n');
 return (0);
 }
-

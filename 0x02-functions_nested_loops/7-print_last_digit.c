@@ -6,6 +6,6 @@
  */
 int print_last_digit(int b)
 {
-x = b % 10
+x = b % 10;
 return (x);
 }

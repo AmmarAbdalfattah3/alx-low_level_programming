@@ -13,5 +13,6 @@ _putchar(-n);
 else
 {
 _putchar(n);
+return (0);
 }
 }

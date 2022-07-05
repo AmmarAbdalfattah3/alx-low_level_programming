@@ -1,3 +1,4 @@
+int _putchar(int c);
 /**
  *print_alphabet- print all letters
  */

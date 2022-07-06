@@ -5,7 +5,7 @@
  * @l: is a first variable
  * @z: is a second variable
  */
-nt add(int l, int z)
+int add(int l, int z)
 {
 int a;
 int j;

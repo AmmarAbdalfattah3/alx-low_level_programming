@@ -10,11 +10,11 @@ for (h = 0; h < 24; h++)
 {
 for (m = 0; m < 60; m++)
 {
-_putchar((hr / 10) + '0');
-_putchar((hr % 10) + '0');
+_putchar((h / 10) + '0');
+_putchar((h % 10) + '0');
 _putchar(':');
-_putchar((min / 10) + '0');
-_putchar((min % 10) + '0');
+_putchar((m / 10) + '0');
+_putchar((m % 10) + '0');
 _putchar('\n');
 }
 }

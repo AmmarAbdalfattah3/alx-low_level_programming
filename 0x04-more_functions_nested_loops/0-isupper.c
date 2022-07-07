@@ -6,9 +6,8 @@
  */
 int _isupper(int c)
 {
-if (c >= 'A' && c <= 'Z')
+if (c >= 65 && c <= 90)
 {
--putchar(c);
 return (1);
 }
 else

@@ -9,7 +9,7 @@ int c;
 int x;
 if (n <= 0)
 {
-putchar('\n');
+_putchar('\n');
 }
 for (c = 0; c < size; c++)
 {

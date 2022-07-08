@@ -7,6 +7,10 @@ void print_square(int size)
 {
 int c;
 int x;
+if (n <= 0)
+{
+putchar('\n');
+}
 for (c = 0; c < size; c++)
 {
 for (x = 0; x < size; x++)

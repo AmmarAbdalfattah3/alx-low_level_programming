@@ -9,15 +9,15 @@ int c;
 int x;
 if (n <= 0)
 {
-putchar('\n');
+_putchar('\n');
 }
 for (c = 0; c < n; c++)
 {
 for (x = 0; x < c; x++)
 {
-putchar(' ');
+_putchar(' ');
 }
-putchar('\\');
-putchar('\n');
+_putchar('\\');
+_putchar('\n');
 }
 }

@@ -12,8 +12,8 @@ for (c = 0; c < size; c++)
 {
 for (x = 0; x < size; x++)
 {
-putchar('#');
+_putchar('#');
 }
-putchar('\n');
+_putchar('\n');
 }
 }

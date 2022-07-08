@@ -5,7 +5,6 @@
  */
 void print_square(int size)
 {
-{
 int c;
 int x;
 for (c = 0; c < size; c++)

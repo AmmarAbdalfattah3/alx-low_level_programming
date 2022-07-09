@@ -3,7 +3,6 @@
  * main - prints the numbers from 1 to 100
  * Return: Always 0
  */
-void fizz_buzz(void);
 int main(void)
 {
 int n;
@@ -31,4 +30,5 @@ printf(" ");
 }
 }
 printf("\n");
+return (0);
 }

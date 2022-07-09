@@ -3,13 +3,10 @@
  * main - prints the numbers from 1 to 100
  * Return: Always 0
  */
+void fizz_buzz(void);
 int main(void)
 {
 int n;
-if (n <= 0)
-{
-putchar('\n');
-}
 for (n = 1; n <= 100; n++)
 {
 if (n % 3 == 0 && n % 5 == 0)

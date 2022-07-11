@@ -7,5 +7,5 @@
 int _strlen(char *s)
 {
 char l[] = *s;
-return (l);
+return (l[]);
 }

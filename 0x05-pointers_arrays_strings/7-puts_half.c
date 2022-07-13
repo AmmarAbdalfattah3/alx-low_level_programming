@@ -22,7 +22,7 @@ str = mk;
 if (!(len % 2))
 {
 
-ron = len - 1 / 2;
+ron = (len - 1) / 2;
 
 ron++;
 

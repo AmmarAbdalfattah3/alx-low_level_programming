@@ -10,5 +10,6 @@ while (*str != '\0')
 _putchar(*str);
 str += 2;
 }
+s--;
 _putchar('\n');
 }

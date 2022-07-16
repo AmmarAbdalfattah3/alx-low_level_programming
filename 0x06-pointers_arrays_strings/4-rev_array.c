@@ -8,17 +8,11 @@
 void reverse_array(int *a, int n)
 {
 int i;
-int b;
-b = n - 1;
+n--;
 i = n;
 while (i >= 0)
 {
-if (i != b)
-{
-printf(", ");
-}
-printf("%d", a[i]);
+a[i];
 i--;
 }
-printf("\n");
 }

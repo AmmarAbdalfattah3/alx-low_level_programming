@@ -14,5 +14,6 @@ k = n[h] + 32;
 printf("%c", k);
 }
 printf("\n");
+return (0);
 }
 

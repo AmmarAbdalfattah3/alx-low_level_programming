@@ -7,10 +7,11 @@
 char *string_toupper(char *n)
 {
 int h;
-
-for (h = 0; n[h + 32] != '\0'; h++)
+int k;
+for (h = 0; n[h] != '\0'; h++)
 {
-printf("%s", n[h + 32]);
+k = n[h] + 32;
+printf("%c", k);
 }
 printf("\n");
 }

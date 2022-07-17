@@ -10,7 +10,7 @@ int h;
 
 for (h = 0; n[h + 32] != '\0'; h++)
 {
-printf("%c", n[h + 32]);
+printf("%s", n[h + 32]);
 }
 printf("\n");
 }

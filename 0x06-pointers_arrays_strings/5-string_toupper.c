@@ -2,18 +2,20 @@
 /**
  * *string_toupper - changes all lowercase letters.
  * @n: is a parameter
- * Return: 0
+ * Return: n
  */
 char *string_toupper(char *n)
 {
-int h;
-int k;
-for (h = 0; n[h] != '\0'; h++)
+int i;
+i = 0;
+while (n[i] != '\0')
 {
-k = n[h] + 32;
-printf("%c", k);
+if (n[i] >= 'a' && n[i] <= 'Z')
+{
+n[i] = n[i] - 896;
 }
-printf("\n");
-return (0);
+i++;
+}
+return (n);
 }
 

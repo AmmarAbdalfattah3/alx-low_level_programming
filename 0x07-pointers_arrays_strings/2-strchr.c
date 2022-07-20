@@ -9,6 +9,7 @@ char *_strchr(char *s, char c)
 {
 int i;
 i = 0;
+char *p = NULL;
 while (s[i] != '\0')
 {
 if (s[i] == c)
@@ -19,7 +20,7 @@ i++;
 }
 if (s[i] == '\0')
 {
-return (NULL);
+return (p);
 }
 }
 

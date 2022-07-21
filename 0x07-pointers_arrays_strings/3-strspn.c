@@ -3,6 +3,7 @@
  * _strspn - gets the length of a prefix substring
  * @s: is a first parameter
  * @accept: is a second parameter
+ * Return: n
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -19,7 +20,7 @@ for (in = 0; accept[in] != '\0'; in++)
 if (s[i] == accept[in])
 n++;
 }
-else 
+else
 {
 return (n);
 }

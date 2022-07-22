@@ -21,9 +21,7 @@ if (s[i] == accept[in])
 n++;
 }
 else
-{
 return (n);
-}
 }
 }
 return (n);

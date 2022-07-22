@@ -20,9 +20,9 @@ for (in = 0; accept[in] != '\0'; in++)
 if (s[i] == accept[in])
 n++;
 }
+}
 else
 return (n);
-}
 }
 return (n);
 }

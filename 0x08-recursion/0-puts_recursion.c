@@ -10,13 +10,13 @@ in = 0;
 
 if (s[in] != '\0')
 {
-putchar(s[in]);
+_putchar(s[in]);
 in++;
 s++;
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 return;
 }
 _puts_recursion(s);

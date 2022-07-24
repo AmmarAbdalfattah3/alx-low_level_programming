@@ -8,10 +8,12 @@
 int main(int argc, char **argv)
 {
 int in;
-for (in = 0; argc--; in++)
+in = 0;
+for (argc-- && argv[in])
 {
-argv[in];
+in++;
 }
-printf("%d\n", in - 1);
+in--;
+printf("%d\n", in);
 return (0);
 }

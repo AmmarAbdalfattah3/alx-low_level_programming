@@ -14,6 +14,6 @@ while (argc-- && argv[in])
 in++;
 }
 in--;
-printf("%d\n", in--);
+printf("%d\n", in);
 return (0);
 }

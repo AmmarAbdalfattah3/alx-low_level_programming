@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - prints all arguments it receives.
  * @argc: is a first parameter

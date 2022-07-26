@@ -26,7 +26,10 @@ l++;
 
 len = f + l + 1;
 g = (char *)malloc(sizeof(char) * len);
-
+if (g == 0)
+{
+return (NULL);
+}
 for (f = 0; s1[f] != '\0'; f++)
 {
 g[f] = s1[f];
@@ -34,11 +37,6 @@ g[f] = s1[f];
 for (l = 0; s2[l] != '\0'; l++)
 {
 g[f + l] = s2[l];
-}
-if (g == 0)
-{
-return (NULL);
-}
-else
+
 return (g);
 }

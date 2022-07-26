@@ -24,8 +24,8 @@ while (s2[l] != '\0')
 l++;
 }
 
-len = f + l + 1;
-g =(char *)malloc(sizeof(char) * len);
+len = f + l;
+g = (char *)malloc(sizeof(char) * len);
 if (g == 0)
 {
 return (NULL);

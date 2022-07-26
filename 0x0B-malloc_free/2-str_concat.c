@@ -19,10 +19,12 @@ while (s1[f] != '\0')
 {
 f++;
 }
+f++;
 while (s2[l] != '\0')
 {
 l++;
 }
+l++;
 
 len = f + l + 1;
 g = (char *)malloc(sizeof(char) * len);

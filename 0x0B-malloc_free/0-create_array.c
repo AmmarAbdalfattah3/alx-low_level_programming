@@ -13,11 +13,6 @@ char *x;
 unsigned int i;
 i = 0;
 x = (char *)malloc(size * sizeof(char));
-while (i < size)
-{
-x[i] = c;
-i++;
-}
 if (size <= 0)
 {
 return (NULL);
@@ -26,6 +21,10 @@ else if (x == NULL)
 {
 return (NULL);
 }
-else
+while (i < size)
+{
+x[i] = c;
+i++;
+}
 return (x);
 }

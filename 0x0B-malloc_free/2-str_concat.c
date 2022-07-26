@@ -25,7 +25,7 @@ l++;
 }
 
 len = f + l + 1;
-g = (char *)malloc(sizeof(char) * len);
+g = malloc(sizeof(char) * len);
 if (g == 0)
 {
 return (NULL);

@@ -22,10 +22,10 @@ if (size <= 0)
 {
 return (NULL);
 }
-else if (x != NULL)
+else if (x == NULL)
 {
-return (x);
+return (NULL);
 }
 else
-return (NULL);
+return (x);
 }

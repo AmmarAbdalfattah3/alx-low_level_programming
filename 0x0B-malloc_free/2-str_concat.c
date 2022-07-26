@@ -32,11 +32,11 @@ return (NULL);
 }
 for (f = 0; s1[f] != '\0'; f++)
 {
-*(g + i) = *(s1 + i);
+*(g + f) = *(s1 + f);
 }
 for (l = 0; s2[l] != '\0'; l++)
 {
-*(g + i + j) = *(s2 + j);
+*(g + f + l) = *(s2 + l);
 }
 return (g);
 }

@@ -7,5 +7,12 @@
  */
 void free_grid(int **grid, int height)
 {
-free(mal);
+int rx;
+rx = 0;
+while (rx < height)                             
+{
+free(grid[rx]);
+rx++;
+}
+free(grid);
 }

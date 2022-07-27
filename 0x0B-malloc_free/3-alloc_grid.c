@@ -43,6 +43,5 @@ mal[in][on] = 0;
 
 return (mal);
 }
-free(mal);
 return (NULL);
 }

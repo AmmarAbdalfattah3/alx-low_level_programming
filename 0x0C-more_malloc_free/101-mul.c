@@ -9,6 +9,7 @@
  */
 int main(int argc, char **argv)
 {
+int sum;
 if (argc == 3)
 {
 if (atoi(argv[1]) > 0 && atoi(argv[2]) > 0)

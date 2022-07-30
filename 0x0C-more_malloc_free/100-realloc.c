@@ -22,7 +22,7 @@ free(ptr);
 return (NULL);
 }
 real = malloc(new_size);
-if (real && new_size > old_size)
+if (real)
 {
 for (m = 0; m < new_size; m++)
 {

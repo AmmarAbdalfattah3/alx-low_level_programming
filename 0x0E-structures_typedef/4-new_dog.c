@@ -25,7 +25,7 @@ if (ow == NULL)
 free(ow);
 return (NULL);
 }
-stupid_dog = malloc(sizeof(dog_t));
+stupid_dog = malloc(sizeof(*stupid_dog));
 if (stupid_dog)
 {
 x = 0;

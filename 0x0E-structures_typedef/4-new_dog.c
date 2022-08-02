@@ -12,7 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *stupid_dog;
 char *na, *ow;
-unsigned int x = 0;
+unsigned int x;
 na = malloc(sizeof(char) * (strlen(name) + 1));
 if (na == NULL)
 {
@@ -28,6 +28,7 @@ return (NULL);
 stupid_dog = malloc(sizeof(dog_t));
 if (stupid_dog)
 {
+x = 0;
 while (name[x] != '\0')
 {
 na[x] = name[x];
@@ -43,7 +44,7 @@ x++;
 ow[x] = '\0';
 stupid_dog->name = na;
 stupid_dog->age = age;
-stupid_dog->owner = owner;
+stupid_dog->owner = ow;
 return (stupid_dog);
 }
 free(na);

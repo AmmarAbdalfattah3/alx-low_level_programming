@@ -3,7 +3,6 @@
 /**
  * free_dog - frees dogs
  * @d: is a parameter
- *
  */
 void free_dog(dog_t *d)
 {

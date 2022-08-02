@@ -18,7 +18,7 @@ printf("Name: (nil)\n");
 }
 if (d->age >= 0)
 {
-printf("Age:%s\n", d->age);
+printf("Age:%f\n", d->age);
 }
 else
 {

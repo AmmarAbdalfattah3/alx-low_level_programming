@@ -14,5 +14,4 @@ if (name != NULL && f != NULL)
 {
 f(name);
 }
-return;
 }

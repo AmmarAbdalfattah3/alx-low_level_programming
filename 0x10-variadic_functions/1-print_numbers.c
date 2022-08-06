@@ -22,6 +22,6 @@ if (i < n - 1)
 printf("%s", separator);
 }
 }
-va_end(var);
 printf("\n");
+va_end(var);
 }

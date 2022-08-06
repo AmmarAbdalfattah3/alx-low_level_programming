@@ -29,7 +29,7 @@ case 'c':
 printf("%c%s", va_arg(var, int), p);
 break;
 case 'i':
-printf("%i%s", va_arg(var, int), p);
+printf("%d%s", va_arg(var, int), p);
 break;
 case 'f':
 printf("%f%s", va_arg(var, double), p);

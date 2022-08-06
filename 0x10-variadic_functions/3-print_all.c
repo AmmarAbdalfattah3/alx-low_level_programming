@@ -36,7 +36,7 @@ printf("%f%s", va_arg(var, double), p);
 break;
 case 's':
 str = va_arg(var, char *);
-if (!str)
+if (!*str)
 str = "(nil)";
 printf("%s%s", str, p);
 break;

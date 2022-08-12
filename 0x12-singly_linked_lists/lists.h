@@ -1,5 +1,5 @@
-#ifndef PRINT_LIST
-#define PRINT_LIST
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stdlib.h>
 #include <string.h>

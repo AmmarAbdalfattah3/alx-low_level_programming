@@ -10,12 +10,12 @@ unsigned int i;
 unsigned int x;
 i = 0;
 x = 0;
-while (h != NULL)
-{
 if (h == NULL)
 {
 return (x);
 }
+while (h != NULL)
+{
 h = h->next;
 i++;
 }

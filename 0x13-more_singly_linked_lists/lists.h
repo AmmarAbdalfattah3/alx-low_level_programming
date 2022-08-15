@@ -1,5 +1,5 @@
-#ifndef LINKED_MORE
-#define LINKED_MORE
+#ifndef LINKED_H
+#define LINKED_H
 
 #include <stdlib.h>
 #include <string.h>
@@ -8,8 +8,7 @@
 /**
  * struct listint_s - singly linked list
  * @n: integer
- * @next: points to the next node
- * 
+ * @next: points to the next node 
  * Description: singly linked list node structure
  *
  */

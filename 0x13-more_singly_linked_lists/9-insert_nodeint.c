@@ -13,15 +13,15 @@ listint_t *node;
 listint_t *temp;
 node = malloc(sizeof(listint_t));
 temp = node;
-temp->next = *head;
-for (i = 0; temp != NULL; i++)
+node->next = *head;
+for (i = 0; node != NULL; i++)
 {
 	if (i == idx)
 	{
-		temp->n = n;
-		return (temp);
+		node->n = n;
+		return (node);
 	}
-	temp = temp->next;
+	node = node->next;
 }
 return (NULL);
 }

@@ -53,7 +53,7 @@ if (node != NULL)
 	{
 		if (z == idx - 1)
 		{
-			temp2 = temp1->next
+			temp2 = temp1->next;
 			temp1->next = node, h = listint_len(*head);
 			if (z == h)
 			{

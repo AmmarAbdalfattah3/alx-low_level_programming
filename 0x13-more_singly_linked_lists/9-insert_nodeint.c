@@ -14,14 +14,14 @@ listint_t *temp;
 node = malloc(sizeof(listint_t));
 temp = node;
 node->next = *head;
-for (i = 0; node != NULL; i++)
+for (i = 0; temp != NULL; i++)
 {
 	if (i == idx)
 	{
-		node->n = n;
-		return (node);
+		temp->n = n;
+		return (temp);
 	}
-	node = node->next;
+	temp = temp->next;
 }
 return (NULL);
 }

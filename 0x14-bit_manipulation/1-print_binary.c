@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	numb = n;
 	for (i = 0; i != 0; i++)
 	{
-		n >>= 1;
+		n = n >> 1;
 	}
 	for (i -= 1; i >= 0; i--)
 	{

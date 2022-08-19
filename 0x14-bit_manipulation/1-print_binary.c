@@ -10,12 +10,12 @@ void print_binary(unsigned long int n)
 	unsigned long int numb;
 	int i;
 
+	numb = n;
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	numb = n;
 	for (i = 0; i != 0; i++)
 	{
 		n = n >> 1;

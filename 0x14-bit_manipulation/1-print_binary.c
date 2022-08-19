@@ -19,7 +19,7 @@ void print_binary(unsigned long int n)
 
 	for (i = 0; i != 0; i++)
 	{
-		n = n >> 1;
+		n >>= 1;
 	}
 
 	for (i -= 1; i >= 0; i--)

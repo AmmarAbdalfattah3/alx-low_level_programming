@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return;
 	}
 	numb = n;
@@ -22,6 +22,6 @@ void print_binary(unsigned long int n)
 	}
 	for (i -= 1; i >= 0; i--)
 	{
-		putchar('0' +  ((numb >> i) & 1));
+		_putchar('0' +  ((numb >> i) & 1));
 	}
 }

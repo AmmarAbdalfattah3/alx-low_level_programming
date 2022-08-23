@@ -1,5 +1,5 @@
-#ifndef FILE_DESCRIPTOR
-#define FILE_DESCRIPTOR
+#ifndef FILE_DESCRIPTOR_H
+#define FILE_DESCRIPTOR_H
 
 #include <stdio.h>
 #include <stdlib.h>

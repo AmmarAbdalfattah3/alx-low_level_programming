@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -19,7 +18,7 @@ static ssize_t read_filename(char *filename, char **buffer, int fd)
 {
 int len;
 
-	if (fd == -1)
+	if (fd < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
 		exit(98);
@@ -38,7 +37,7 @@ int len;
 
 len = read(fd, *buffer, BUFFER_SIZE);
 
-	if (len == -1)
+	if (len < 0)
 	{
 		free(*buffer);
 		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
@@ -60,14 +59,14 @@ len = read(fd, *buffer, BUFFER_SIZE);
  */
 static void copy_file(char *filename, int fd, char *buffer, int len)
 {
-	if (!buffer || fd == -1)
+	if (!buffer || fd < 0)
 	{
 		free(buffer);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 
-	if (write(fd, buffer, len) == -1)
+	if (write(fd, buffer, len) < 0)
 	{
 		free(buffer);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
@@ -103,7 +102,7 @@ int main(int ac, char **av)
 	while (len > 0)
 	{
 		len = read_filename(file_from, &buffer, fd_1);
-		if (len == -1)
+		if (!len)
 		{
 			break;
 		}
@@ -111,13 +110,13 @@ int main(int ac, char **av)
 	}
 	free(buffer);
 	error_close = close(fd_1);
-	if (error_close == -1)
+	if (error_close < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_1);
 		exit(100);
 	}
 	error_close = close(fd_2);
-	if (error_close == -1)
+	if (error_close < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd_2);
 		exit(100);

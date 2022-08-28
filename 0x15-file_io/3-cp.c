@@ -85,7 +85,7 @@ static void copy_file(char *filename, int fd, char *buffer, int len)
  */
 int main(int ac, char **av)
 {
-	int fd_1, fd_2, len, error;
+	int fd_1, fd_2, len, error_close;
 	char *file_from, *file_to, *buffer;
 
 	len = 1;
@@ -109,14 +109,14 @@ int main(int ac, char **av)
 		copy_file(file_to, fd_2, buffer, len);
 	}
 	free(buffer);
-	error = close(fd_1);
-	if (error < 0)
+	error_close = close(fd_1);
+	if (error_close < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_1);
 		exit(100);
 	}
-	error = close(fd_2);
-	if (error < 0)
+	error_close = close(fd_2);
+	if (error_close < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd_2);
 		exit(100);

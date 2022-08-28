@@ -19,28 +19,32 @@ static ssize_t read_filename(char *filename, char **buffer, int fd)
 {
 int len;
 
-if (fd == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
-exit(98);
-}
+	if (fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
+		exit(98);
+	}
 
-if (!buffer)
-{
-*buffer = malloc(sizeof(char) * BUFFER_SIZE);
-dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
-exit(98);
-}
+	if (!buffer)
+	{
+	*buffer = malloc(sizeof(char) * BUFFER_SIZE);
+	}
+
+	if (!buffer)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
+		exit(98);
+	}
 
 len = read(fd, *buffer, BUFFER_SIZE);
 
-if (len == -1)
-{
-free(*buffer);
-dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
-exit(98);
-}
-return (len);
+	if (len == -1)
+	{
+		free(*buffer);
+		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
+		exit(98);
+	}
+	return (len);
 }
 
 

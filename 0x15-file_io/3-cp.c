@@ -24,7 +24,7 @@ static ssize_t read_filename(char *filename, char **buffer, int fd)
 		exit(98);
 	}
 
-	if (buffer == NULL)
+	if (!buffer)
 	{
 		*buffer = malloc(sizeof(char) * BUFFER_SIZE);
 		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
@@ -55,7 +55,7 @@ static ssize_t read_filename(char *filename, char **buffer, int fd)
  */
 static void copy_file(char *filename, int fd, char *buffer, int len)
 {
-	if (buffer == NULL || fd == -1)
+	if (!buffer || fd == -1)
 	{
 		free(buffer);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
@@ -98,7 +98,7 @@ int main(int ac, char **av)
 	while (len > 0)
 	{
 		len = read_filename(file_from, &buffer, fd_1);
-		if (len < 0)
+		if (len == -1)
 		{
 			break;
 		}

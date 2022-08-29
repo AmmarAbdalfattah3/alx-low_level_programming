@@ -110,13 +110,13 @@ int main(int ac, char **av)
 	}
 	free(buffer);
 	error_close = close(fd_1);
-	if (error_close < 0)
+	if (error_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_1);
 		exit(100);
 	}
 	error_close = close(fd_2);
-	if (error_close < 0)
+	if (error_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd_2);
 		exit(100);

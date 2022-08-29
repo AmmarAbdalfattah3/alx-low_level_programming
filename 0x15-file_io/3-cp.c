@@ -24,12 +24,12 @@ int len;
 		exit(98);
 	}
 
-	if (!buffer)
+	if (buffer == NULL)
 	{
 	*buffer = malloc(sizeof(char) * BUFFER_SIZE);
 	}
 
-	if (!buffer)
+	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from filename %s\n", filename);
 		exit(98);

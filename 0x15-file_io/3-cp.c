@@ -59,7 +59,7 @@ len = read(fd, *buffer, BUFFER_SIZE);
  */
 static void copy_file(char *filename, int fd, char *buffer, int len)
 {
-	if (!buffer || fd < 0)
+	if (buffer == NULL || fd < 0)
 	{
 		free(buffer);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);

@@ -25,9 +25,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			if (x == (idx - 1))
 			{
 				node2 = node->next;
-				node2->prev = insert_node;
 				node->next = insert_node;
 				insert_node->next = node2;
+				node2->prev = insert_node;
 				insert_node->prev = node;
 				return (insert_node);
 			}

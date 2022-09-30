@@ -8,7 +8,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *node;
-	size_t i = 0
+	size_t i = 0;
 
 	node = head;
 	if (index == 0)

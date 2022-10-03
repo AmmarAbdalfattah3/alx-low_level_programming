@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * @str: pointer to the first char of the string
+ * @s: pointer to the first char of the string
  */
-void _puts(char *str)
+void _puts(char *s)
 {
 	int i = 0;
 
-	while (str[i])
+	while (s[i])
 	{
-		_putchar(str[i]);
+		_putchar(s[i]);
 		i++;
 	}
 }

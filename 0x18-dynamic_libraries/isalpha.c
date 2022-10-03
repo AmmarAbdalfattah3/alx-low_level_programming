@@ -1,14 +1,17 @@
 #include "main.h"
 /**
- * print_alphabet- print all letters
+ * _isalpha - checks for alphabetic character.
+ * Return: 1 or 0
+ * @c: is a variable
  */
-void print_alphabet(void)
+int _isalpha(int c)
 {
-	int i;
-
-	for (i = 'a'; i <= 'z'; i++)
+	if (c >= 'A' && c <= 'z')
 	{
-		_putchar(i);
+		return (1);
 	}
-	_putchar('\n');
+	else
+	{
+		return (0);
+	}
 }

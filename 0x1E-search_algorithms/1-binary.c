@@ -54,7 +54,7 @@ int binary_search(int *array, size_t size, int value)
 		if (array[mid] > value)
 		{
 			right = mid;
-			print_certain_numbers(array, left, right + 1);
+			print_certain_numbers(array, left, right);
 		}
 		else if (array[mid] < value)
 		{

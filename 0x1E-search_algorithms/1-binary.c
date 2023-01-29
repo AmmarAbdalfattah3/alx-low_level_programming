@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * print_certain_numbers - print the array being searched every time it changes.
+ * print_certain_numbers - print the array being searched every time.
  * @array: the array to be printed
  * @start: index to start the array
  * @end: number of elements in the array
@@ -8,8 +8,11 @@
 void print_certain_numbers(int *array, size_t start, size_t end)
 {
 	size_t index;
+
 	printf("Searching in array: ");
+
 	index = start;
+
 	while (array && index < end)
 	{
 		if (index > start)

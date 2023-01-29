@@ -16,7 +16,9 @@ void print_certain_numbers(int *array, size_t start, size_t end)
 	while (array && index < end)
 	{
 		if (index > start)
+		{
 			printf(", ");
+		}
 		printf("%d", array[index]);
 		index++;
 	}

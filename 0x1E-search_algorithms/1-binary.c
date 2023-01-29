@@ -46,15 +46,15 @@ int binary_search(int *array, size_t size, int value)
 	while (left < right)
 	{
 		mid = (left + right) / 2;
-		if (array[mid] > value)
-		{
-			right = mid;
-			print_certain_numbers(array, left, right + 1);
-		}
-		else if (array[mid] < value)
+		if (array[mid] < value)
 		{
 			left = mid + 1;
 			print_certain_numbers(array, left, size);
+		}
+		else if (array[mid] > value)
+		{
+			right = mid;
+			print_certain_numbers(array, left, right + 1);
 		}
 		else
 		{

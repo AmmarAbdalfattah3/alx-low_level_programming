@@ -43,7 +43,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		temp2 = node;
 		node->next = ht->array[index_key];
-		ht->array[index_key];
+		ht->array[index_key] = temp2;
 	}
 	return (1);
 }

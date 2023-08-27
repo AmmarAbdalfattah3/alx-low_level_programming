@@ -14,9 +14,9 @@ int main(void)
 		while (y <= '9')
 		{
 			z = x;
+			d = y + 1;
 			while (z <= '9')
 			{
-				d = y + 1;
 				while (d <= '9')
 				{
 					putchar(x);
@@ -38,7 +38,6 @@ int main(void)
 				d = '0';
 				z++;
 			}
-			z = '0';
 			y++;
 		}
 		y = '0';

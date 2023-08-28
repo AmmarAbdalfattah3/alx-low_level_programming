@@ -21,6 +21,7 @@ void print_times_table(int n)
 					putchar(',');
 					putchar(' ');
 					putchar(' ');
+					putchar(' ');
 				}
 				y++;
 			}

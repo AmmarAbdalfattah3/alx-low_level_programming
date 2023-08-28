@@ -1,24 +1,31 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * print_times_table -  prints the n times table
+ * @n: a parameter
+ */
 void print_times_table(int n)
 {
 	int x = 0, y = 0;
 
-	while (x <= n)
+	if (n > 0 && n < 15)
 	{
-		while (y <= n)
+		while (x <= n)
 		{
-			printf("%d",y * x);
-			if (y < n)
+			while (y <= n)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf("%d", y * x);
+				if (y < n)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				y++;
 			}
-			y++;
+			_putchar('\n');
+			y = 0;
+			x++;
 		}
-		_putchar('\n');
-		y = 0;
-		x++;
 	}
 }

@@ -10,6 +10,7 @@
 int main(void)
 {
 	int num1, num2, x, y, sum;
+
 	num1 = 1, num2 = 1, x = 0, y = 0;
 
 	while (num1 <= 1024)
@@ -27,5 +28,5 @@ int main(void)
 	}
 	sum =  x + y;
 	printf("%d\n", sum);
-	return(0);
+	return (0);
 }

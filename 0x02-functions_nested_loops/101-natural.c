@@ -9,19 +9,23 @@
 
 int main(void)
 {
-	int num1, num2, sum;
+	int num1, num2, x, y, sum;
+	num1 = 1, num2 = 1, x = 0, y = 0;
 
-	num1 = 0, num2 = 0;
 	while (num1 <= 1024)
 	{
-		if ((num1 % 3) == 0 && (num2 % 5) == 0)
+		if ((num1 % 3) == 0)
 		{
-			sum = num1 + num2;
+			x += num1;
+		}
+		else if ((num2 % 5) == 0)
+		{
+			y += num2;
 		}
 		num1++;
 		num2++;
 	}
-	printf("%d", sum);
-	putchar('\n');
-	return (0);
+	sum =  x + y;
+	printf("%d\n", sum);
+	return(0);
 }

@@ -18,12 +18,12 @@ void print_times_table(int n)
 				printf("%d", y * x);
 				if (y < n)
 				{
-					_putchar(',');
-					_putchar(' ');
+					putchar(',');
+					putchar(' ');
 				}
 				y++;
 			}
-			_putchar('\n');
+			putchar('\n');
 			y = 0;
 			x++;
 		}

@@ -7,7 +7,7 @@
  */
 void print_times_table(int n)
 {
-	int x = 0, y = 0;
+	int x = 0, y = 0, k;
 
 	if (n > 0 && n < 15)
 	{
@@ -15,14 +15,29 @@ void print_times_table(int n)
 		{
 			while (y <= n)
 			{
-				printf("%d", y * x);
-				if (y < n)
+				k = y * x;
+				if (k <= 9)
+				{
+					if (y > 0)
+					{
+						putchar(',');
+						putchar(' ');
+						putchar(' ');
+						putchar(' ');
+					}
+				}
+				else if (k >= 10 && k < 100)
 				{
 					putchar(',');
 					putchar(' ');
 					putchar(' ');
+				}
+				else
+				{
+					putchar(',');
 					putchar(' ');
 				}
+				printf("%d", k);
 				y++;
 			}
 			putchar('\n');

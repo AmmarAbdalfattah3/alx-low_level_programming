@@ -2,27 +2,31 @@
 #include <stdlib.h>
 
 /**
- * main - prints the first 50 Fibonacci numbers.
+ * main - rints the first 50 Fibonacci numbers
  * Return: (0)
  */
 
+
 int main(void)
 {
-	int x, y, n;
+	int n = 0;
+	unsigned long int x, y;
 
-	x = 1, y = 2, n = 2;
+	x = 1, y = 2, n = 0;
 
-	do {
-		printf("%d, ", abs(x));
+	while (n <= 24)
+	{
+		printf("%lu, ", x);
 		x += y;
-		printf("%d", abs(y));
+		printf("%lu", y);
 		y += x;
+		if (n < 24)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		n++;
-		if (n == 50)
-			break;
-		putchar(',');
-		putchar(' ');
-	} while (1);
+	}
 
 	putchar('\n');
 	return (0);

@@ -10,7 +10,7 @@ int main(void)
 {
 	int x, y, n;
 
-	x = 1, y = 2;
+	x = 1, y = 2, n = 2;
 
 	do {
 		printf("%d, ", abs(x));

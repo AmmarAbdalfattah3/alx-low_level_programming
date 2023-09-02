@@ -16,7 +16,7 @@ int main(void)
 		x += y;
 		printf("%lu", y);
 		y += x;
-		if (n < 9)
+		if (n < 49)
 		{
 			putchar(',');
 			putchar(' ');

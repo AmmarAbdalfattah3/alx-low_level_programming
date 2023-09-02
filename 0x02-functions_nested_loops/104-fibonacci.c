@@ -10,19 +10,19 @@ int main(void)
 	int n = 0;
 	unsigned long int x = 1, y = 2;
 
-	while (n < 44)
+	while (n < 43)
 	{
 		printf("%lu", x);
 		x += y;
-		if (n < 43)
+		if (n < 42)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 
-		if (n <= 42)
+		if (n <= 41)
 		{
-			printf("%lu", y);
+			printf("%lu, ", y);
 			y += x;
 		}
 		n++;

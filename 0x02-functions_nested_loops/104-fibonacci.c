@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 98 Fibonacci numbers
+ * main - finds and prints the sum of the even-valued terms
  * Return: 0
  */
 
@@ -10,16 +10,20 @@ int main(void)
 	int n = 0;
 	unsigned long int x = 1, y = 2;
 
-	while (n < 48)
+	while (n < 43)
 	{
-		printf("%lu, ", x);
+		printf("%lu", x);
 		x += y;
-		printf("%lu", y);
-		y += x;
-		if (n <= 47)
+		if (n < 42)
 		{
 			putchar(',');
 			putchar(' ');
+		}
+
+		if (n <= 41)
+		{
+			printf("%lu", y);
+			y += x;
 		}
 		n++;
 	}

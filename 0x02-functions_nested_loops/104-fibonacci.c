@@ -10,17 +10,17 @@ int main(void)
 	int n = 0;
 	unsigned long int x = 1, y = 2;
 
-	while (n < 48)
+	while (n < 47)
 	{
 		printf("%lu", x);
 		x += y;
-		if (n < 47)
+		if (n < 46)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 
-		if (n <= 46)
+		if (n <= 45)
 		{
 			printf("%lu, ", y);
 			y += x;

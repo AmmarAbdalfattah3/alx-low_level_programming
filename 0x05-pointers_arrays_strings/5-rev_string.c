@@ -19,6 +19,5 @@ void rev_string(char *s)
 		y++;
 		x--;
 	}
-	(*s)--;
 	_putchar('\n');
 }

@@ -5,18 +5,19 @@
  */
 void rev_string(char *s)
 {
-char *k;
-k = s;
+	char *k;
 
-while (*s != '\0')
-{
-s++;
-}
-s -= 1;
+	k = s;
 
-while (k <= s)
-{
-s--;
-}
-_putchar('\n');
+	while (*s != '\0')
+	{
+		s++;
+	}
+	s -= 1;
+
+	while (k <= s)
+	{
+		s--;
+	}
+	_putchar('\n');
 }

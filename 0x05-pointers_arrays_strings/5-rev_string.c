@@ -5,19 +5,19 @@
  */
 void rev_string(char *s)
 {
-	char *k;
+	int x = 0, y = 0;
+	char temp;
 
-	k = s;
-
-	while (*s != '\0')
+	while (*(s + x) != '\0')
+		x++;
+	x--;
+	while (y < x)
 	{
-		s++;
-	}
-	s -= 1;
-
-	while (k <= s)
-	{
-		s--;
+		temp = *(s + y);
+		*(s + y) = *(s + x);
+		*(s + x) = temp;
+		y++;
+		x--;
 	}
 	_putchar('\n');
 }

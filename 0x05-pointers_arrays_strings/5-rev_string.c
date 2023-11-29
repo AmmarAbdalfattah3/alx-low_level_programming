@@ -17,7 +17,11 @@ void rev_string(char *s)
 		*(s + y) = *(s + x);
 		*(s + x) = temp;
 		if (*(s + y) == '\0')
+		{
 			(*s)--;
+			*s -= y;
+			break;
+		}
 		y++;
 		x--;
 	}

@@ -11,11 +11,13 @@ void rev_string(char *s)
 	while (*(s + x) != '\0')
 		x++;
 	x--;
-	while (y < x && x >= 0)
+	while (y < x)
 	{
 		temp = *(s + y);
 		*(s + y) = *(s + x);
 		*(s + x) = temp;
+		if (*(s + y) == '\0')
+			(*s)--;
 		y++;
 		x--;
 	}

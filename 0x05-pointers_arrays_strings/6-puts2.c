@@ -5,14 +5,10 @@
  */
 void puts2(char *str)
 {
-	int x = 0;
-
-	while (*(str + x))
+	while (*str != '\0')
 	{
-		_putchar(*(str + (x * 2)));
-		x++;
-		if (x == 5)
-			break;
+		_putchar(*str);
+		str += 2;
 	}
 	_putchar('\n');
 }

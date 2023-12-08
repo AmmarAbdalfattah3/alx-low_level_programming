@@ -9,10 +9,10 @@ void puts2(char *str)
 
 	while (*(str + x))
 	{
-		putchar(*(str + (x * 2)));
+		_putchar(*(str + (x * 2)));
 		x++;
 		if (x == 5)
 			break;
 	}
-	putchar('\n');
+	_putchar('\n');
 }

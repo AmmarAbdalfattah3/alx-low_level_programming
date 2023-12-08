@@ -13,18 +13,14 @@ void rev_string(char *s)
 	x--;
 	while (y < x)
 	{
-		temp = *(s + y);
-		*(s + y) = *(s + x);
-		*(s + x) = temp;
-		if (*(s + y) == '\0')
+		if (*(s + y))
 		{
-			(*s)--;
-			*s -= y;
-			break;
+			temp = *(s + y);
+			*(s + y) = *(s + x);
+			*(s + x) = temp;
 		}
 		y++;
 		x--;
 	}
-	s[-y] -= 1;
 	_putchar('\n');
 }
